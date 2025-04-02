@@ -344,3 +344,6 @@
 .icon-30:before {
   content: "\e930"; 
 }
+.icon-quality:before {
+  content: "\f560";
+}
