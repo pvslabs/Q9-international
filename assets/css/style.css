@@ -7518,3 +7518,32 @@ textarea.form-control {
   right: 0;
   color: #000000;
 }/*# sourceMappingURL=style.css.map */
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .about-img-mob {
+    padding: 30px 20px 30px 27px !important;
+  }
+  .sec-pad {
+    /* padding-top: 5px !important; */
+    padding-bottom: 5px !important;
+  }
+  .abt-sec {
+    padding-top: 75px !important;
+    padding-bottom: 75px !important;
+  }
+}
+
+.about-img-mob {
+  padding: 20px 30px 40px 37px !important;
+}
+
+.sec-pad {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.abt-sec1 {
+  padding-top: 75px !important;
+  padding-bottom: 40px;
+  /* padding-bottom: 75px !important; */
+}
