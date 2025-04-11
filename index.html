@@ -18,10 +18,27 @@
 
 <body>
   <div class="wrapper">
-    <div class="preloader">
+    <!-- <div class="preloader">
       <div class="loading"><span></span><span></span><span></span><span></span></div>
-    </div><!-- /.preloader -->
+    </div> -->
 
+    <!-- <div id="preloader">
+      <video id="preload-video" autoplay muted playsinline>
+        <source src="assets/images/products-gallery/sanso.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div> -->
+
+    <div id="preloader">
+      <video id="preloader-video" autoplay muted playsinline>
+          <source src="assets/images/products-gallery/sanso.mp4" type="video/mp4">
+          <!-- Fallback text if video doesn't load -->
+          <p>Loading...</p>
+      </video>
+  </div>
+
+
+    
     <!-- =========================
         Header
     =========================== -->
@@ -1361,23 +1378,23 @@
           <div class="col-12">
             <div class="slick-carousel"
               data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "autoplay": true, "arrows": true, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
-              <a class="popup-gallery-item" href="assets/images/gallery/1.jpg">
-                <img src="assets/images/gallery/1.jpg" alt="gallery img">
+              <a class="popup-gallery-item" href="assets/images/products-gallery/q9-international-product-poultry-full-600x400px.webp">
+                <img src="assets/images/products-gallery/q9-international-product-poultry-600x400px.webp" alt="q9 international products">
               </a>
-              <a class="popup-gallery-item" href="assets/images/gallery/2.jpg">
-                <img src="assets/images/gallery/2.jpg" alt="gallery img">
+              <a class="popup-gallery-item" href="assets/images/products-gallery/q9-international-product-veterinary-full-600x400px.webp">
+                <img src="assets/images/products-gallery/q9-international-product-veterinary-600x400px.webp" alt="q9 international products">
               </a>
-              <a class="popup-gallery-item" href="assets/images/gallery/3.jpg">
-                <img src="assets/images/gallery/3.jpg" alt="gallery img">
+              <a class="popup-gallery-item" href="assets/images/products-gallery/q9-international-product-dog-cat-full-600x400px.webp">
+                <img src="assets/images/products-gallery/q9-international-product-dog-cat-600x400px.webp" alt="q9 international products">
               </a>
-              <a class="popup-gallery-item" href="assets/images/gallery/4.jpg">
-                <img src="assets/images/gallery/4.jpg" alt="gallery img">
+              <a class="popup-gallery-item" href="assets/images/products-gallery/q9-international-product-horse-camel-full-600x400px.webp">
+                <img src="assets/images/products-gallery/q9-international-product-horse-camel-600x400px.webp" alt="q9 international products">
               </a>
-              <a class="popup-gallery-item" href="assets/images/gallery/5.jpg">
-                <img src="assets/images/gallery/5.jpg" alt="gallery img">
+              <a class="popup-gallery-item" href="assets/images/products-gallery/q9-international-product-swine-full-600x400px.webp">
+                <img src="assets/images/products-gallery/q9-international-product-swine-600x400px.webp" alt="q9 international products">
               </a>
-              <a class="popup-gallery-item" href="assets/images/gallery/6.jpg">
-                <img src="assets/images/gallery/6.jpg" alt="gallery img">
+              <a class="popup-gallery-item" href="assets/images/products-gallery/q9-international-product-aqua-full-600x400px.webp">
+                <img src="assets/images/products-gallery/q9-international-product-aqua-600x400px.webp" alt="q9 international products">
               </a>
             </div><!-- /.gallery-images-wrapper -->
           </div>
@@ -1482,6 +1499,7 @@
 
   <script src="assets/js/jquery-3.5.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/pre-load.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
