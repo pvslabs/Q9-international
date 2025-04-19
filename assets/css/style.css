@@ -7691,3 +7691,33 @@ textarea.form-control {
     }
   }  
 
+
+
+  /* table {
+      width: 400px;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 0px 10px;
+    }
+    .label {
+      text-align: left;
+    }
+    .value {
+      text-align: right;
+    } */
+
+    table {
+      width: 100%;
+      max-width: 500px;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #333;
+      /* padding: 8px 12px; */
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
