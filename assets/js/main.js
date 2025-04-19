@@ -217,27 +217,46 @@ $(function () {
     }
 
     /*==========  Contact Form validation  ==========*/
-    var contactForm = $("#contactForm"),
-        contactResult = $('.contact-result');
-    contactForm.validate({
-        debug: false,
-        submitHandler: function (contactForm) {
-            $(contactResult, contactForm).html('Please Wait...');
-            $.ajax({
-                type: "POST",
-                url: "assets/php/contact.php",
-                data: $(contactForm).serialize(),
-                timeout: 20000,
-                success: function (msg) {
-                    $(contactResult, contactForm).html('<div class="alert alert-success" role="alert"><strong>Thank you. We will contact you shortly.</strong></div>').delay(3000).fadeOut(2000);
-                },
-                error: $('.thanks').show()
-            });
-            return false;
-        }
-    });
 
-    /*==========   Slick Carousel ==========*/
+    // emailjs.init("YOUR_PUBLIC_KEY"); 
+
+    // document.getElementById("contactForm").addEventListener("submit", function(e) {
+    // e.preventDefault();
+
+    // const resultDiv = document.querySelector(".contact-result");
+    // resultDiv.innerHTML = "⏳ Sending...";
+
+    // emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+    //     .then(function(response) {
+    //     resultDiv.innerHTML = '<div class="alert alert-success" role="alert"><strong>✅ Message sent successfully!</strong></div>';
+    //     document.getElementById("contactForm").reset();
+    //     }, function(error) {
+    //     resultDiv.innerHTML = '<div class="alert alert-danger" role="alert"><strong>❌ Something went wrong. Try again later.</strong></div>';
+    //     console.error("EmailJS error:", error);
+    //     });
+    // });
+    
+    // var contactForm = $("#contactForm"),
+    //     contactResult = $('.contact-result');
+    // contactForm.validate({
+    //     debug: false,
+    //     submitHandler: function (contactForm) {
+    //         $(contactResult, contactForm).html('Please Wait...');
+    //         $.ajax({
+    //             type: "POST",
+    //             url: "assets/php/contact.php",
+    //             data: $(contactForm).serialize(),
+    //             timeout: 20000,
+    //             success: function (msg) {
+    //                 $(contactResult, contactForm).html('<div class="alert alert-success" role="alert"><strong>Thank you. We will contact you shortly.</strong></div>').delay(3000).fadeOut(2000);
+    //             },
+    //             error: $('.thanks').show()
+    //         });
+    //         return false;
+    //     }
+    // });
+
+    
     $('.slick-carousel').slick();
 
     $('.slider-with-navs').slick({
