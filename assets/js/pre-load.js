@@ -18,5 +18,5 @@ document.addEventListener('DOMContentLoaded', function() {
           document.body.classList.add('loaded');
           preloader.remove();
       }
-  }, 7000); // Updated to 5 seconds as per the comment
+  }, 5000); // Updated to 5 seconds as per the comment
 });
